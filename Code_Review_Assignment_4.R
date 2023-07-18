@@ -79,8 +79,32 @@ hist(log(if4$duration.seconds), xlab = "Duration (s)", main = "Duration of UFO S
 hist
 
 
-#' CODE REVIEW COMMENTS: 
-#' 
+#' CODE REVIEW COMMENTS: By Sanari Wickramaratne 
 
-
-
+#' The csv file is correctly read into a dataframe with correct column names.
+#' A minor suggestion is to include View(), print(), or variable name after each function to view the output. 
+#' For example, when you created the new dataset if2, it would be helpful to have the View() after the main code to take a look at the changes applied.  
+#' The rows where Shape information is missing is correctly imputed with "unknown". Correct use of is.na(). 
+#' For this question, alternate functions you could use are the mutate() and replace() functions that might simplify your code just a bit. 
+#' Great comments listed before each action. It made your code really easy to understand. 
+#' The rows with missing values for Country were perfectly identified and removed. 
+#' Datetime and date_posted columns were correctly changed into the appropriate formats. 
+#' Interesting decision to use # to differentiate if a sighting is a hoax based on if # appears in the comment. 
+#' I'm not sure why you used that to distinguish if something was a hoax. 
+#' Comments that didn't look like a hoax were labeled as hoax just because they had # in it. 
+#' For instance, just looking at the first couple of rows, rows 3, 6, 7, and 8, 
+#' there was no indication that these sightings were a hoax. More importantly, there were no comment left by NUFORC in these sightings either. 
+# Including a comment explaining why you used # to identify hoax sightings would have been helpful! 
+#'The table reporting the percentage of hoax sightings per country was accurately done! Great use of prop.table()!
+#'A way to shorten the code is to pipe and use group_by() and summarize() to achieve the same result. 
+#' Great job on adding another column to the dataset and populating with the time difference in days, 
+#' between the date of the sighting and the date it was reported.
+#' The table reporting the average report_delay per country looks perfect. Interesting use of aggregate()!
+#' I liked how you checked for missingness in multiple columns, not just the duration.seconds column. 
+#' For checking data quality, I love how you changed the format of the duration.hours.min column since there was a lot of uncertainty with that data. 
+#' Having just the minutes for that column makes a lot of sense! Much cleaner that way! 
+#' For the histogram code, it looks great, however, when I try to run it, I get an error saying that the figure margins are too large. 
+#' A potential solution to fix this error is to adjust mar parameter to smaller values. 
+#' For instance, using this might help: par(mar = c(2, 2, 2, 2)) or change your xlim values based on the data max and min. 
+#' Overall, the code for this assignment ran well for the most part and was very readable with comments that were easy to understand! 
+#' Excellent work!!
