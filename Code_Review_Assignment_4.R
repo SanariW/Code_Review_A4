@@ -96,7 +96,7 @@ hist
 #' Comments that didn't look like a hoax were labeled as hoax just because they had # in it. 
 #' For instance, just looking at the first couple of rows, rows 3, 6, 7, and 8, 
 #' there was no indication that these sightings were a hoax. More importantly, there were no comment left by NUFORC in these sightings either. 
-# Including a comment explaining why you used # to identify hoax sightings would have been helpful! 
+#' Including a comment explaining why you used # to identify hoax sightings would have been helpful! 
 #'The table reporting the percentage of hoax sightings per country was accurately done! Great use of prop.table()!
 #'A way to shorten the code is to pipe and use group_by() and summarize() to achieve the same result. 
 #' Great job on adding another column to the dataset and populating with the time difference in days, 
