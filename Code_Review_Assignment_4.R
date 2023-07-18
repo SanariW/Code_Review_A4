@@ -3,6 +3,8 @@
 library(tidyverse)
 
 #' CODE REVIEW BY: SANARI WICKRAMARATNE
+#' Code review comments at the end of script. 
+#' Review comments distinguished by "#'". 
 
 #First I am going to input the file from directory
 input_file <- read.csv("ufo_subset.csv", header = TRUE)
